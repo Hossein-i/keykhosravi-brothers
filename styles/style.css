@@ -23,23 +23,25 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: background-color 0.4s ease;
+  cursor: pointer;
 }
 .header-mobile__button:hover {
   background-color: #eee;
 }
 .header-mobile__button span {
   display: block;
-  width: 50%;
-  height: 0.125rem;
+  width: 40%;
+  height: 0.0625rem;
   background-color: #000;
   position: absolute;
   transition: transform 0.4s ease, opacity 0.4s ease;
 }
 .header-mobile__button span:nth-child(1) {
-  transform: translateY(-0.5rem);
+  transform: translateY(-0.375rem);
 }
 .header-mobile__button span:nth-child(4) {
-  transform: translateY(0.5rem);
+  transform: translateY(0.375rem);
 }
 .header-mobile__button.open span:nth-child(1), .header-mobile__button.open span:nth-child(4) {
   transform: translateY(0);
@@ -55,7 +57,7 @@ body {
   height: 3rem;
 }
 
-.header-main {
+.menu-mobile {
   width: 100%;
   height: 100vh;
   background-color: #fff;
@@ -65,31 +67,25 @@ body {
   align-items: center;
   position: absolute;
   top: 0;
-  right: -27rem;
-  transition: right 0.4s ease-out;
+  right: -48rem;
+  transition: right 0.6s ease;
 }
-.header-main.show {
+.menu-mobile.show {
   right: 0;
 }
-.header-main__button {
-  display: none;
-}
-.header-main__button:hover {
-  background-color: #eee;
-}
-.header-main__logo {
+.menu-mobile__logo {
   height: 3rem;
   padding-top: 1rem;
 }
 
-.internal-links-mobile ul li {
-  opacity: 0.7;
+.internal-links ul li {
+  opacity: 0.5;
   transition: opacity 0.4s ease;
 }
-.internal-links-mobile ul li:hover, .internal-links-mobile ul li.active {
+.internal-links ul li:hover, .internal-links ul li.active {
   opacity: 1;
 }
-.internal-links-mobile ul li a {
+.internal-links ul li a {
   display: block;
   color: inherit;
   text-align: center;
@@ -97,6 +93,28 @@ body {
   padding: 1rem;
 }
 
-.internal-links {
+.social-links {
+  padding-bottom: 1rem;
+}
+.social-links ul {
+  display: flex;
+}
+.social-links ul li {
+  padding-right: 1rem;
+}
+.social-links ul li a {
+  display: inline-block;
+  opacity: 0.5;
+  transition: opacity 0.4s ease;
+}
+.social-links ul li a:hover {
+  opacity: 1;
+}
+.social-links ul li a svg {
+  width: 1rem;
+  height: 1rem;
+}
+
+.header-desktop {
   display: none;
 }/*# sourceMappingURL=style.css.map */

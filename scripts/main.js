@@ -1,7 +1,8 @@
+// open and close menu mobile
 const menuButton = document.getElementById("menu-button"),
-      menu = document.getElementById("menu")
+      menuMobile = document.getElementById("menu-mobile")
 
 menuButton.addEventListener("click", function(){
     menuButton.classList.toggle("open")
-    menu.classList.toggle("show")
+    menuMobile.classList.toggle("show")
 })
