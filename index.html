@@ -109,7 +109,62 @@
             </section>
         </section>
     </header>
-
+    <!-- Main -->
+    <main class="main">
+        <section class="hero-header">
+            <!-- Slideshow main container -->
+            <div class="slideshow">
+                <!-- Additional required wrapper -->
+                <div class="slideshow__wrapper">
+                    <!-- Slides -->
+                    <div class="slideshow__slide">
+                        <img src="./assets/img/img-1.jfif" alt="">
+                        <span>عنوان 1</span>
+                    </div>
+                    <div class="slideshow__slide">
+                        <img src="./assets/img/img-2.jfif" alt="">
+                        <span>عنوان 2</span>
+                    </div>
+                    <div class="slideshow__slide">
+                        <img src="./assets/img/img-3.jpg" alt="">
+                        <span>عنوان 3</span>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="slideshow__pagination">
+                    <span onclick="currentSlides(1)"></span>
+                    <span onclick="currentSlides(2)"></span>
+                    <span onclick="currentSlides(3)"></span>
+                </div>
+                <!-- If we need navigation buttons -->
+                <div class="slideshow__button-prev" onclick="navSlides(1)">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.0001 17L12.2371 15.2527C10.8312 13.8592 10.1282 13.1625 10.02 12.3133C9.99343 12.1053 9.99343 11.8947 10.02 11.6867C10.1282 10.8375 10.8312 10.1408 12.2371 8.74731L14.0001 7" stroke="#2D264B" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <div class="slideshow__button-next" onclick="navSlides(-1)">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 7.00002L11.763 8.74732C13.1689 10.1408 13.8719 10.8375 13.9801 11.6867C14.0067 11.8947 14.0067 12.1053 13.9801 12.3133C13.8719 13.1625 13.1689 13.8593 11.763 15.2527L10 17" stroke="#2D264B" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>                        
+                </div>
+            </div>
+            <div class="hero-header__content">
+                <h1>گروه صنعتی برادران کیخسروی</h1>
+                <p>گروه صنعتی برادران کیخسروی در چهار حوزه صنعتی شامل طراحی و ساخت قالب های تزریق پلاستیک، طراحی و ساخت سیلندر و ماردون های تزریق پلاستیک، واحد طراحی مهندسی و ساخت قطعات و تجهیزات وابسته به دستگاه های تزریق پلاستیک فعالیت دارد.</p>
+                <div class="hero-header__wrapper-button">
+                    <a href="#">تماس با ما</a>
+                    <a href="#">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17 10L15.2527 11.763C13.8592 13.1689 13.1625 13.8719 12.3133 13.9801C12.1053 14.0066 11.8947 14.0066 11.6867 13.9801C10.8375 13.8719 10.1408 13.1689 8.74731 11.763L7 10" stroke="#000" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>                            
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    <!-- Footer -->
+    <footer></footer>
     <!-- Scripts -->
     <script src="./scripts/main.js"></script>
 

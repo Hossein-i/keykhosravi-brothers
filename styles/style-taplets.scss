@@ -49,3 +49,31 @@
     align-items: center;
   }
 }
+.main {
+  padding-top: 8rem;
+}
+.hero-header {
+  height: 80vh;
+  flex-direction: row-reverse;
+  align-items: center;
+
+  > div {
+    flex: 1;
+  }
+  &__content {
+    padding: 0 1rem;
+
+    h1 {
+      text-align: start;
+    }
+    p {
+      padding-bottom: 6rem;
+    }
+  }
+}
+.slideshow {
+  padding: 0;
+  height: 62.5%;
+  border-radius: 1rem;
+  overflow: hidden;
+}
