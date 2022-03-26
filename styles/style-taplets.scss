@@ -50,30 +50,42 @@
   }
 }
 .main {
-  padding-top: 8rem;
+  padding-top: 10rem;
 }
 .hero-header {
-  height: 80vh;
+  display: flex;
   flex-direction: row-reverse;
   align-items: center;
+  min-height: calc(100vh - 10rem);
+  padding-bottom: 0;
 
   > div {
     flex: 1;
   }
   &__content {
-    padding: 0 1rem;
+    // padding-inline-end: 4rem;
 
     h1 {
       text-align: start;
     }
-    p {
-      padding-bottom: 6rem;
-    }
   }
 }
 .slideshow {
-  padding: 0;
-  height: 62.5%;
+  margin-inline-end: 1rem;
+  padding-top: 35%;
   border-radius: 1rem;
   overflow: hidden;
+}
+.services {
+  padding: 0 1rem;
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1rem;
+  }
+  &__item {
+    margin-bottom: 0;
+    border-radius: 1rem;
+  }
 }
