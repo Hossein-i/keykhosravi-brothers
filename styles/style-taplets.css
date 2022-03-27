@@ -87,4 +87,18 @@
 .services__item {
   margin-bottom: 0;
   border-radius: 1rem;
+}
+
+.achievements {
+  margin: 0 1rem;
+  border-radius: 1rem;
+}
+.achievements__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  padding: 1rem;
+}
+.achievements__item {
+  border-radius: 1rem;
 }/*# sourceMappingURL=style-taplets.css.map */

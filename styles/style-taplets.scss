@@ -89,3 +89,17 @@
     border-radius: 1rem;
   }
 }
+.achievements {
+  margin: 0 1rem;
+  border-radius: 1rem;
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  &__item {
+    border-radius: 1rem;
+  }
+}
