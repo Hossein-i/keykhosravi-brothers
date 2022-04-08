@@ -116,4 +116,13 @@
 }
 .cards-3__item--fw {
   grid-area: 1/1/2/3;
+}
+
+.contact-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-us form {
+  width: 40rem;
 }/*# sourceMappingURL=style-taplets.css.map */
