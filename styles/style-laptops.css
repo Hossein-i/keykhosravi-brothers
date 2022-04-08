@@ -4,13 +4,17 @@ html {
 }
 
 body {
-  width: 1024px;
+  width: 64rem;
 }
 
 .header {
-  width: 1024px;
+  width: 64rem;
 }
 
 .slideshow {
   padding-top: 30%;
+}
+
+.cards-2__wrapper {
+  grid-template-columns: 1fr 1fr 1fr;
 }/*# sourceMappingURL=style-laptops.css.map */

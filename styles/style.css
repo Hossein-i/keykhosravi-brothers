@@ -5,7 +5,7 @@
 body {
   font-family: Shabnam;
   max-width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   position: relative;
 }
 
@@ -322,81 +322,18 @@ body {
     filter: blur(0);
   }
 }
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 5rem;
+}
 .services h2 {
+  width: 15rem;
   font-size: 1.5rem;
   font-weight: bold;
   text-align: center;
-  padding-bottom: 2rem;
-}
-.services__wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-bottom: 2rem;
-}
-.services__item {
-  position: relative;
-  height: 15rem;
-  overflow: hidden;
-  margin-bottom: 1rem;
-}
-.services__item:hover .services__content {
-  bottom: -25%;
-}
-.services__item img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.services__content {
-  position: absolute;
-  bottom: calc(-100% + 50px);
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  transition: bottom 0.4s ease, transform 0.4s ease;
-}
-.services__content h3 {
-  text-align: center;
-  background-color: #fff;
-  border-radius: 1rem 1rem 0 0;
-  width: 15rem;
-  padding: 1rem 0;
-  font-size: 1.125rem;
-  font-weight: bold;
-  position: relative;
-}
-.services__content h3::after, .services__content h3::before {
-  content: "";
-  padding: 1rem;
-  background-color: transparent;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  transform: translateX(-100%);
-  border-radius: 0 0 1rem 0;
-  box-shadow: 8px 8px 0 #fff;
-}
-.services__content h3::before {
-  left: unset;
-  right: 0;
-  transform: translateX(100%);
-  border-radius: 0 0 0 1rem;
-  box-shadow: -8px 8px 0 #fff;
-}
-.services__content p {
-  background-color: #fff;
-  width: 100%;
-  height: 100%;
-  padding: 1rem;
-  text-align: justify;
-  line-height: 1.6;
-}
-.services__content p a {
-  color: #4169e1;
+  padding-bottom: 1rem;
 }
 
 .achievements {
@@ -404,6 +341,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 5rem;
 }
 .achievements h2 {
   font-size: 1.5rem;
@@ -411,7 +349,7 @@ body {
   text-align: center;
   padding: 1rem;
   background-color: #fff;
-  width: 15rem;
+  width: 18rem;
   border-radius: 0 0 1rem 1rem;
   position: relative;
 }
@@ -433,25 +371,43 @@ body {
   border-radius: 1rem 0 0 0;
   box-shadow: -8px -8px 0 #fff;
 }
-.achievements__wrapper {
-  padding: 1rem 0;
+
+.cards {
   width: 100%;
+  padding: 1rem 0;
 }
-.achievements__item {
+.cards--dark .cards__content {
+  color: #fff;
+}
+.cards--dark .cards__content h3 {
+  background-color: #000;
+}
+.cards--dark .cards__content h3::after {
+  box-shadow: 8px 8px 0 #000;
+}
+.cards--dark .cards__content h3::before {
+  box-shadow: -8px 8px 0 #000;
+}
+.cards--dark .cards__content p {
+  background-color: #000;
+}
+.cards__item {
   width: 100%;
   height: 15rem;
   overflow: hidden;
   position: relative;
   margin-bottom: 1rem;
 }
-.achievements__item:hover .achievements__content {
-  bottom: -50%;
+.cards__item:hover .cards__content {
+  bottom: -25%;
 }
-.achievements__item img {
+.cards__item img {
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
-.achievements__content {
+.cards__content {
   position: absolute;
   bottom: calc(-100% + 50px);
   width: 100%;
@@ -460,19 +416,18 @@ body {
   flex-direction: column;
   align-items: center;
   transition: bottom 0.4s ease, transform 0.4s ease;
-  color: #fff;
 }
-.achievements__content h3 {
+.cards__content h3 {
   text-align: center;
-  background-color: #000;
+  background-color: #fff;
   border-radius: 1rem 1rem 0 0;
-  width: 20rem;
+  width: 18rem;
   padding: 1rem 0;
   font-size: 1.125rem;
   font-weight: bold;
   position: relative;
 }
-.achievements__content h3::after, .achievements__content h3::before {
+.cards__content h3::after, .cards__content h3::before {
   content: "";
   padding: 1rem;
   background-color: transparent;
@@ -481,20 +436,116 @@ body {
   left: 0;
   transform: translateX(-100%);
   border-radius: 0 0 1rem 0;
-  box-shadow: 8px 8px 0 #000;
+  box-shadow: 8px 8px 0 #fff;
 }
-.achievements__content h3::before {
+.cards__content h3::before {
   left: unset;
   right: 0;
   transform: translateX(100%);
   border-radius: 0 0 0 1rem;
-  box-shadow: -8px 8px 0 #000;
+  box-shadow: -8px 8px 0 #fff;
 }
-.achievements__content p {
-  background-color: #000;
+.cards__content p {
+  background-color: #fff;
   width: 100%;
   height: 100%;
   padding: 1rem;
   text-align: justify;
   line-height: 1.6;
+}
+.cards__content p a {
+  color: #4169e1;
+}
+
+.why-us {
+  margin-bottom: 5rem;
+}
+.why-us h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.cards-2 {
+  padding: 1rem;
+}
+.cards-2__wrapper {
+  display: grid;
+  gap: 1rem;
+}
+.cards-2__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+.cards-2__item h3 {
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+.cards-2__item p {
+  opacity: 0.7;
+  line-height: 1.6;
+}
+
+.latest-products {
+  padding-bottom: 5rem;
+}
+.latest-products h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.cards-3 {
+  padding: 1rem 0;
+}
+.cards-3__wrapper {
+  display: grid;
+  gap: 1rem;
+}
+.cards-3__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.cards-3__item img {
+  width: 100%;
+  height: 20rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.cards-3__item h3 {
+  font-size: 1.125rem;
+  font-weight: bold;
+  position: absolute;
+  bottom: 0;
+  background-color: #fff;
+  width: 18rem;
+  padding: 1rem 0;
+  text-align: center;
+  border-radius: 1rem 1rem 0 0;
+  line-height: 1.4;
+}
+.cards-3__item h3::after, .cards-3__item h3::before {
+  content: "";
+  background-color: transparent;
+  padding: 1rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateX(-100%);
+  border-radius: 0 0 1rem 0;
+  box-shadow: 8px 8px 0 #fff;
+}
+.cards-3__item h3::before {
+  left: unset;
+  right: 0;
+  transform: translateX(100%);
+  border-radius: 0 0 0 1rem;
+  box-shadow: -8px 8px 0 #fff;
 }/*# sourceMappingURL=style.css.map */

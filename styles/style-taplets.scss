@@ -76,30 +76,47 @@
   border-radius: 1rem;
   overflow: hidden;
 }
-.services {
-  padding: 0 1rem;
-
-  &__wrapper {
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 1rem;
-  }
-  &__item {
-    margin-bottom: 0;
-    border-radius: 1rem;
-  }
-}
 .achievements {
+  border-radius: 1rem;
+  margin: 0 1rem 5rem;
+}
+.cards {
   margin: 0 1rem;
   border-radius: 1rem;
+  padding: 1rem;
 
   &__wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
-    padding: 1rem;
   }
   &__item {
     border-radius: 1rem;
+    margin-bottom: 0;
+    min-height: 100%;
+
+    &--fw{
+      grid-area: 1 / 1 / 2 / 3 !important;
+    }
+  }
+}
+.cards-2{
+  &__wrapper{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.cards-3{
+  padding: 1rem;
+
+  &__wrapper{
+    grid-template-columns: 1fr 1fr;
+  }
+  &__item{
+    border-radius: 1rem;
+    overflow: hidden;
+
+    &--fw{
+      grid-area: 1 / 1 / 2 / 3;
+    }
   }
 }
