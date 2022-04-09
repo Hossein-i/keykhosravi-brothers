@@ -44,6 +44,9 @@
   padding-top: 0rem;
 }
 
+.internal-links--vertical-2 ul {
+  flex-direction: column;
+}
 .internal-links ul {
   display: flex;
   justify-content: center;
@@ -125,4 +128,17 @@
 }
 .contact-us form {
   width: 40rem;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+  margin: 0 1rem;
+  border-radius: 1rem 1rem 0 0;
+}
+.footer__content img {
+  width: 75%;
 }/*# sourceMappingURL=style-taplets.css.map */
